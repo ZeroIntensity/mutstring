@@ -1,0 +1,6 @@
+dist/
+.vscode/
+test.py
+__pycache__/
+.mypy-cache
+*.egg-info
