@@ -3,6 +3,8 @@ from _pointers import add_ref
 import sys
 from typing import Dict
 
+__all__ = ("cleanup",)
+
 _PTR = to_ptr(str)
 _CACHE: Dict[int, MallocPointer[str]] = {}
 
