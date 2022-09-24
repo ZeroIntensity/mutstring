@@ -6,7 +6,7 @@ with open("./README.md") as f:
 if __name__ == "__main__":
     setup(
         name="mutstring",
-        version="1.0.0",
+        version="1.0.1",
         author="ZeroIntensity",
         author_email="<zintensitydev@gmail.com>",
         description="please never use this",

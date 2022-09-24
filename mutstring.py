@@ -1,12 +1,12 @@
-from pointers import to_ptr, Pointer, malloc, free, MallocPointer
+from pointers import to_ptr, Pointer, malloc, free, AllocatedPointer
 from _pointers import add_ref
-import sys
 from typing import Dict
+import sys
 
 __all__ = ("cleanup",)
 
 _PTR = to_ptr(str)
-_CACHE: Dict[int, MallocPointer[str]] = {}
+_CACHE: Dict[int, AllocatedPointer[str]] = {}
 
 _OLD_JOIN = str.join
 _OLD_STRIP = str.strip
